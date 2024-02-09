@@ -1,3 +1,4 @@
+
 from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, reverse, get_object_or_404
@@ -86,3 +87,4 @@ class UserSubscriptionView(LoginRequiredMixin, View):
         user.save()
 
         return redirect('accounts:user_detail', pk=pk)
+

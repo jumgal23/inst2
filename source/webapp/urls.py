@@ -1,3 +1,4 @@
+
 from django.urls import path
 from webapp.views.publication_views import HomeView, PublicationCreateView, PublicationLikeView
 
@@ -8,3 +9,4 @@ urlpatterns = [
     path('publications/create/', PublicationCreateView.as_view(), name='publication_create'),
     path('publications/like/<int:pk>/', PublicationLikeView.as_view(), name='publication_like')
 ]
+

@@ -1,3 +1,4 @@
+
 from django.contrib.auth import get_user_model
 from django.db import models
 
@@ -24,3 +25,4 @@ class Publication(models.Model):
         self.author.publication_counter -= 1
         self.author.save()
         return super().delete(*args, **kwargs)
+

@@ -1,3 +1,4 @@
+
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path
 
@@ -17,3 +18,4 @@ urlpatterns = [
     path('users/subscription/<int:pk>/', UserSubscriptionView.as_view(), name='user_subscription')
 
 ]
+
